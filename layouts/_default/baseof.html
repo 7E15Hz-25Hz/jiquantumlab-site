@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">JiQL</span>
+        <span class="logo-text">Ji Quantum Lab</span>
+      </div>
+      <nav class="nav">
+        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "/people/" | relURL }}">People</a>
+        <a href="{{ "/research/" | relURL }}">Research</a>
+        <a href="{{ "/publications/" | relURL }}">Publications</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © {{ now.Year }} Ji Quantum Lab · MIT
+    </div>
+  </footer>
+</body>
+</html>
