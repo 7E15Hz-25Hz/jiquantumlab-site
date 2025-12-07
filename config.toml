@@ -1,0 +1,11 @@
+baseURL = "https://7E15Hz-25Hz.github.io/jiquantumlab/"
+languageCode = "en-us"
+title = "Ji Quantum Lab"
+theme = ""
+enableRobotsTXT = true
+
+[params]
+  lab_name = "Ji Quantum Lab"
+  tagline = "Seeing quantum materials in the microwave world"
+
+
